@@ -25,13 +25,12 @@ body::before {
 }
 
 .wrapper {
-  width: 400px;
-  border-radius: 8px;
-  padding: 30px;
+  width: 50vh;
+  border-radius: 2vh;
+  padding: 3vh;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  border: 0.2vh solid rgba(22, 182, 187, 0.5);
+  backdrop-filter: blur(1vh);
 }
 
 form {
@@ -47,7 +46,7 @@ h2 {
 
 .input-field {
   position: relative;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid white;
   margin: 15px 0;
 }
 
@@ -56,7 +55,7 @@ h2 {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  color: #fff;
+  color: white;
   font-size: 16px;
   pointer-events: none;
   transition: 0.15s ease;
@@ -69,13 +68,12 @@ h2 {
   border: none;
   outline: none;
   font-size: 16px;
-  color: #fff;
+  color: white;
 }
 
 .input-field input:focus~label,
 .input-field input:valid~label {
-  font-size: 0.8rem;
-  top: 10px;
+  font-size: 1.5vh;
   transform: translateY(-120%);
 }
 
@@ -84,11 +82,11 @@ h2 {
   align-items: center;
   justify-content: space-between;
   margin: 25px 0 35px 0;
-  color: #fff;
+  color: white;
 }
 
 #remember {
-  accent-color: #fff;
+  accent-color: white;
 }
 
 .forget label {
@@ -101,7 +99,7 @@ h2 {
 }
 
 .wrapper a {
-  color: #efefef;
+  color: white;
   text-decoration: none;
 }
 
@@ -110,7 +108,7 @@ h2 {
 }
 
 button {
-  background: #fff;
+  background: white;
   color: #000;
   font-weight: 600;
   border: none;
@@ -118,18 +116,17 @@ button {
   cursor: pointer;
   border-radius: 3px;
   font-size: 16px;
-  border: 2px solid transparent;
   transition: 0.3s ease;
 }
 
 button:hover {
-  color: #fff;
-  border-color: #fff;
+  color: white;
+  border-color: white;
   background: rgba(255, 255, 255, 0.15);
 }
 
 .register {
   text-align: center;
   margin-top: 30px;
-  color: #fff;
+  color: white;
 }
