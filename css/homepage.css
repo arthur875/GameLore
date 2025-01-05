@@ -672,13 +672,7 @@ Header Style
     background: #fff !important;
     color: #e75e8d!important;
   }
-  .header-area .main-nav .nav li:last-child a img {
-    display: none;
-  }
-  .header-area .main-nav .nav li:last-child a:hover {
-    color: #ec6090 !important;
-    background-color: transparent !important;
-  }
+
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     position: relative;
     visibility: inherit;
