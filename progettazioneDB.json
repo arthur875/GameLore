@@ -1,0 +1,69 @@
+{
+    "tables": [
+        {
+            "name": "user",
+            "columns": {
+                "username": "VARCHAR PRIMARY KEY",
+                "password": "VARCHAR",
+                "email": "VARCHAR",
+                "registration_date": "DATE"
+            }
+        },
+        {
+            "name": "game",
+            "columns": {
+                "title": "VARCHAR PRIMARY KEY",
+                "description": "VARCHAR",
+                "release_date": "DATE",
+                "developer": "VARCHAR",
+                "publisher": "VARCHAR",
+                "genre": "VARCHAR",
+                "platforms": "VARCHAR"
+            }
+        },
+        {
+            "name": "documentation",
+            "columns": {
+                "id": "INT PRIMARY KEY",
+                "user_username": "VARCHAR FOREIGN KEY",
+                "game_title": "VARCHAR FOREIGN KEY",
+                "title": "VARCHAR",
+                "content": "TEXT",
+                "category": "VARCHAR",
+                "created_at": "TIMESTAMP",
+                "updated_at": "TIMESTAMP",
+                "status": "VARCHAR"
+            }
+        },
+        {
+            "name": "comment",
+            "columns": {
+                "id": "INT PRIMARY KEY",
+                "documentation_id": "INT FOREIGN KEY",
+                "user_username": "VARCHAR FOREIGN KEY",
+                "content": "TEXT",
+                "created_at": "TIMESTAMP"
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "name": "Reads",
+            "from": "user",
+            "to": "documentation",
+            "type": "1-N"
+        },
+        {
+            "name": "Documents",
+            "from": "documentation",
+            "to": "game",
+            "type": "N-1"
+        },
+        {
+            "name": "Comments",
+            "from": "user",
+            "to": "comment",
+            "type": "1-N"
+        }
+    ]
+}
